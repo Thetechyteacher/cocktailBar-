@@ -18,7 +18,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Martel:wght@200;300;400&display=swap" rel="stylesheet">
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500&family=Shadows+Into+Light&family=Sono:wght@300;400;500;600;700&family=Zeyada&display=swap" rel="stylesheet">
     <!-- My own custom stylesheet -->
     <link rel="stylesheet" href="style.css">
 </head>
@@ -180,6 +182,15 @@
                 veniam!</p>
         </div>
     </section>
+    <!-- API Section -->
+    <div class="apiContainer">
+        <h3 class="paragraphApi">Want to try our cocktails <span class="atHome"> at home? </span> </h3>
+        <input type="text" placeholder="Introduce name">
+        <button>Show me how</button>
+        <h5 class="name"></h5>
+        <p class="instructions"></p>
+    </div>
+
     
     <!-- Footer Section -->
     <footer class="center bg-image bg-water">
@@ -188,6 +199,42 @@
             <p> <a href="mailto:negronicocktailbar@gmail.com"> email us: negronicocktailbar@gmail.com</a> </p>
             <p> <a href="tel:+44 123456789"> call us: +44 1234 56789</a> </p>
         </div>
+<!-- Just trying -->
+<form action="reservation.php" method="post">
+    <div class="elem-group">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="visitor_name" placeholder="John Doe" pattern=[A-Z\sa-z]{3,20} required>
+    </div>
+    <div class="elem-group">
+      <label for="email">E-mail</label>
+      <input type="email" id="email" name="visitor_email" placeholder="john.doe@email.com" required>
+    </div>
+    <div class="elem-group">
+      <label for="phone">Phone</label>
+      <input type="tel" id="phone" name="visitor_phone" placeholder="07723456789" pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4}) required>
+    </div>
+   
+    <div class="elem-group inlined">
+      <label for="adult">Adults</label>
+      <input type="number" id="adult" name="total_adults" placeholder="2" min="1" required>
+    </div>
+    
+    <div class="elem-group inlined">
+      <label for="checkin-date">Date</label>
+      <input type="date" id="checkin-date" name="checkin" required>
+    </div>
+    <div class="elem-group inlined">
+    <label for="checkin-time">Time</label>
+      <input type="time" id="checkin-time" name="checkin" required>
+      
+    </div>
+    
+  </form>
+  <div class="elem-group">
+    <button type="submit">Book</button>
+
+</div>
+
         <div class="sub-footer">
             <p> Copyright 2023 </p>
         </div>
